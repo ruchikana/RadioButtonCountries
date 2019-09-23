@@ -1,0 +1,8 @@
+<li *ngFor = 'let country of countriList'
+[ngclass]="{isasia:country['region']==='Asia'}"
+[ngstyle]="{backgroundColor:Country['region']==='Europe'?'green':null}"
+appHighlight='color'
+>
+{{country['name']}}
+
+</li>

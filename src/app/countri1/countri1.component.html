@@ -1,0 +1,26 @@
+<input type="radio" name='hicolor'(Click)="Color='green'">Green<br>
+<input type="radio" name='hicolor' (Click)="Color='red'">Red<br>
+<input type="radio" name='hicolor' (Click)="Color='blue'">Blue<br>
+<ul>
+<!-- <li *ngFor = 'let data of countriList'>{{data['name']+data['capital']}}</li> -->
+
+    <!-- <li *ngFor = 'let country of countriList'
+         [ngClass]="{isasia:country['region']==='Asia'}" 
+        [ngStyle]="{backgroundColor:country['region']==='Europe'?'green':null}"
+        appHighlight='color'
+        appUnderLine
+        >
+        {{country['name']}}
+    </li>-->
+
+    <li *ngFor = 'let country of countriList'
+
+        appHighlight='color'
+        appUnderLine
+        >
+        {{country['name']}}
+    </li>
+
+</ul>
+
+    
